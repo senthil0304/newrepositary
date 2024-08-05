@@ -2,9 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment
-  namespace: senthil
   labels:
     app: nginx
+    namespace: senthil
 spec:
   replicas: 3
   selector:
